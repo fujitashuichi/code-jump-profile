@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+}
+
+
+/* ヘッダーグループ */
+
+header {
+    display: flex;
+    width: 80%;
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.site-title {
+    width: 120px;
+    margin: auto 0;
+    padding: 10px 0;
+}
+
+.site-title img {
+    width: 100%;
+}
+
+
+header nav {
+    display: block;
+    height: fit-content;
+    margin: auto 0 auto auto;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: black;
+}
+
+
+/* メイングループ */
+
+main {
+    width: 100%;
+    height: fit-content;
+}
+
+#main-visual img {
+    width: 100%;
+}
