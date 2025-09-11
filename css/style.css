@@ -125,11 +125,12 @@ main {
 
 #bicycle ul {
     display: flex;
-    column-gap: 15px;
+    justify-content: space-between;
+    list-style-type: disc;  /* 狭めたときに縦並びになる */
 }
 
 #bicycle li {
-    width: 280px;
+    width: 30%; /* px指定よりもフレキシブル */
     list-style: none;
 }
 
@@ -139,7 +140,6 @@ main {
 }
 
 #bicycle p {
-    width: 280px;
-    max-height: 200px;
+    display: block;
     text-wrap: wrap;
 }
