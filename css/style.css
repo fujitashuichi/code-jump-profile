@@ -121,3 +121,24 @@ main {
 }
 
         /* bicycle セクション */
+
+#bicycle ul {
+    display: flex;
+    column-gap: 15px;
+}
+
+#bicycle li {
+    width: 280px;
+    list-style: none;
+}
+
+#bicycle img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#bicycle p {
+    width: 280px;
+    max-height: 200px;
+    text-wrap: wrap;
+}
