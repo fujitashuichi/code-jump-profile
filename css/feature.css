@@ -1,0 +1,149 @@
+body {
+    position: relative;
+    background:linear-gradient(rgba(50, 0, 150, 0.5), rgba(100, 0, 150, 0.5));
+    filter: brightness(100%);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 1;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(90, 80, 190, 0.5);
+    z-index: 2;
+}
+
+header *, .toggle-container {
+    z-index: 3;
+}
+
+header a {
+    font-weight: 400;
+}
+
+
+.section-title {
+    position: relative;
+    border-top: 2px solid rgb(140, 130, 240);
+    border-left: 2px solid rgb(140, 130, 240);
+    border-right: 3px solid rgb(90, 80, 190);
+    border-bottom: 3px solid rgb(90, 80, 190)
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(rgba(255, 200, 100, 0.7), rgba(255, 200, 100, 0.3), rgba(255, 200, 100, 0));
+    z-index: 2;
+    pointer-events: none;
+}
+
+#bicycle li {
+    position: relative;
+    background-image: url("../img/wood-board.jpg");
+    border: outset brown;
+    z-index: 4;
+}
+
+#bicycle li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 260px;
+    background: radial-gradient(at 50% 100%, rgba(255, 200, 100, 0.5), rgba(255, 200, 100, 0));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 3;
+    pointer-events: none;
+}
+
+#bicycle img {
+    border: inset brown 5px;
+}
+
+#bicycle h3 {
+    position: relative;
+    width: fit-content;
+    min-width: 100px;
+    padding: 0 15px;
+    margin: 0 auto;
+    border: outset #eee;
+    background: linear-gradient(-45deg, #ddd, #fff, #ddd);
+}
+
+#bicycle h3::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    width: 0px;
+    height: 0px;
+    border: 2px outset silver;
+    background-color: black;
+}
+
+#bicycle h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: 5px;
+    width: 0px;
+    height: 0px;
+    border: 2px outset silver;
+    background-color: black;
+}
+
+#bicycle p {
+    background: rgba(255, 255, 255, 0.5);
+    width: 250px;
+    height: 200px;
+    margin: 10px auto 15px auto;
+    border-top: solid 2px rgba(255, 255, 255, 0.5);
+    border-left: solid 2px rgba(255, 255, 255, 0.5);
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+    border: inset 2px #ccc;
+    background: linear-gradient(silver, rgba(0, 0, 139, 0.7), rgba(0, 0, 0, 0.7));
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    border: outset 2px gold;
+    background: goldenrod;
+}
+
+p::-webkit-scrollbar {
+    width: 5px;
+}

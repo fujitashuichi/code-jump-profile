@@ -8,6 +8,28 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- ここから課題範囲外 -->
+    <div class="toggle-container">
+        <div class="toggle-label"></div>
+        <input id="toggle" class="toggle-input">
+        <div class="toggle-info">
+            <img id="info-icon" src="./img/info.jpeg" alt="" class="info-icon">
+            <p class="toggle-text">Change Style</p>
+        </div>
+    </div>
+    <dialog id="dialog">
+        <text>スタイルを変更する</text>
+        <hr>
+        <div class="dialog-main">
+            <p>トグルボタンをスライドすると、ページのデザインが変わります。<br>
+                ボタンがOFFのときのページスタイルは、課題として作成したものです。<br>
+                ボタンがONのときのページスタイルは、課題にcssを追加したものです。
+            </p>
+        </div>
+        <button id="dialog-submit" autofocus>OK</button>
+    </dialog>
+    <!-- ここまで課題範囲外 -->
+
     <header>
         <h1 class="site-title">
             <a href="index.html"><img src="img/logo.svg" alt=""></a>
@@ -61,5 +83,6 @@
         </section>
     </main>
     <footer>© 2020 Profile</footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
